@@ -1,0 +1,249 @@
+:root{
+    --bg-color: #fcfcfc;
+    --text-color: #dddddd;
+    --btn-color-light: #333;
+    --btn-color-nigth: #fff;
+    --bg-btn-color: #fff;
+    
+
+}
+
+body{
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 70%;
+}
+
+nav  a img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+nav button{
+    border-radius: 8px;
+    background-color: var(--bg-btn-color);
+    color: var(--btn-color);
+    border: 1px solid var(--bg-btn-color)
+}
+
+nav .dark-mode-button{
+    width: 60px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    margin-right: 10px;
+}
+
+nav .dark-mode-button button{
+    border: 1px solid var(--bg-btn-color);
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+}
+
+nav .dark-mode-button .dark-btn-light{
+    color: #333;
+}
+
+nav .dark-mode-button .dark-btn-night{
+    background-color: #333;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    max-height: 100vh;
+    margin-top: -120px;
+}
+
+main h1{
+    font-size: 80px;
+    font-family: 'varela-round', 'sans-serif';
+    font-weight: 500;
+    background: #CF48B9;
+    background: linear-gradient(to right, #CF48B9 0%, #757575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+main .input-search{
+    width: 40%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ccc
+}
+
+main i{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .input-search input{
+    width: 100%;
+    height: 43px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    font-family: 'roboto', 'sans-serif';
+    font-weight: 400;
+}
+
+main .input-search input:focus{
+    outline: 0;
+}
+
+main .input-search:hover, main .input-search.input-search::selection{
+    -webkit-box-shadow: 0px 0px 100px 0px rgba(216, 216, 216, 1);
+    -moz-box-shadow: 0px 0px 100px 0px rgba(216, 216, 216, 1);
+    box-shadow: 0px 0px 100px 0px rgba(216, 216, 216, 1);
+}
+
+/* field page */
+
+section{
+    display: flex;
+    width: 80%;
+    border: 1px solid #ccc;
+    margin: auto;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+section aside{
+    margin-bottom: 20px;
+}
+
+section aside .aside-search{
+    width: 60%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+section aside .aside-search i{
+    width: 50px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+
+section aside .aside-search input{
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+
+section aside .aside-search input:focus{
+    outline: 0;
+}
+
+section aside .filters{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section aside button{
+    border: none;
+    margin-left: 10px;
+}
+
+section article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section article .article{
+    width: 97%;
+    margin-left: 1.5%;
+    margin-top: 15px;
+    max-height: 170px;
+    border: 1px solid #fafafa;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+    padding: 10px;
+
+}
+
+section article .article .article-title{
+    font-size: 19px ;
+    font-weight: 500;
+}
+
+section article .article-description{
+    margin-top: 10px;
+    color: #888888;
+}
+
+section .section-buttons-pages{
+    max-width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .section-buttons-pages button{
+    margin-left: 10px;
+}
+
+section .section-buttons-pages button:hover{
+    background-color: #ddd;
+    color: #fff;
+}
+
+/*Footer*/
+ footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+ }
+
+ footer i{
+    color: #da1010;
+    margin-left: 5px;
+    margin-right: 5px;;
+ }

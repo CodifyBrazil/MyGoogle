@@ -1,0 +1,12 @@
+<svg width="150" height="50" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="svg_1_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <text font-weight="bold" filter="url(#svg_1_blur)" transform="matrix(0.867474 0 0 0.820218 -3.9457 4.24174)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="'Roboto Mono'" font-size="15" id="svg_1" y="35.27904" x="25.69846" stroke-width="0" fill="#007fff">my</text>
+  <text transform="matrix(1.54504 0 0 1.45916 -39.3009 -10.5606)" stroke="#0a0a04" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Roboto Mono'" font-size="18" id="svg_3" y="31.40074" x="50.13915" stroke-width="0" fill="#ff8282">Google</text>
+ </g>
+</svg>

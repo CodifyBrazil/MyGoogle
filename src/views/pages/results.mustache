@@ -1,0 +1,56 @@
+{{>partials/header}}
+
+        <section>
+        <aside>
+        <form method="GET" action="/q">
+            <div class="aside-top">
+                <div class="aside-search">
+                    <i class="fi fi-br-search"></i>
+                    <input type="text" value="{{search}}" name="query" placeholder="Digite sua busca ...">
+                    <input type="hidden" id="date" name="date_search" value=""/>
+                    <input type="hidden" id="per_page" name="p" value="1"/>
+                </div>
+                <div class="aside-new-data">
+                    <button class="btn btn-success btn-sm">Novo Dado</button>
+                    <button class="btn btn-primary btn-sm btn-right">Novo Filtro</button>
+                </div>
+            </div>  
+        <form>
+
+            <div class="filters">
+            {{#interests}}
+                <a href="/q?query={{name}}&date_search={{date_now}}&p=1"><button class="btn badge bg-secondary">{{name}}</button><a>
+            {{/interests}}
+            </div>
+        </aside>
+        <article>
+            {{#query_search}}
+                <div class="article">
+                    <div class="article-title">
+                        <a href="#">{{title}}</a>
+                    </div>
+                    <div class="article-description">
+                        <p>{{description}}</p>
+                    </div>
+                </div>
+            {{/query_search}}
+        </article>
+        <div class="section-buttons-pages">
+            <a href="/q?query={{search}}&date_search={{date_now}}&p=1"><button class="btn btn-primary btn-sm">1</button></a>
+            <button class="btn btn-light btn-sm">2</button>
+            <button class="btn btn-light btn-sm">3</button>
+            <button class="btn btn-light btn-sm">4</button>
+            <button class="btn btn-light btn-sm">5</button>
+            <button class="btn btn-light btn-sm">6</button>
+        </div>
+    </section>
+
+<script>
+    document.querySelector('.logo').addEventListener('click', ()=>{
+        window.location.href = 'http://localhost:3000/';
+    });
+
+    document.querySelector('#date').value = new Date();
+</script>
+
+{{>partials/footer}}

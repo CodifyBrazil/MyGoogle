@@ -142,6 +142,16 @@ section aside{
     margin-bottom: 20px;
 }
 
+section aside .aside-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section aside .aside-top .btn-right{
+    margin-right: 10px;
+}
+
 section aside .aside-search{
     width: 60%;
     height: 45px;
@@ -247,3 +257,16 @@ section .section-buttons-pages button:hover{
     margin-left: 5px;
     margin-right: 5px;;
  }
+
+
+ /* Modal */
+
+.modals{
+    width: 200px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    position: relative;
+    margin-left: 1200px;
+}

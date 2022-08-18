@@ -8,10 +8,7 @@ export const home = async (req: Request, res: Response) =>{
     let query = await Querys.find({});
     let home = 'Pagina Home';
 
-    console.log(`data: ${query}`);
-
-    console.log(`interesses: ${interests}`);
-    res.render('home',{
+    res.render('pages/home',{
         home,
         interests,
         query

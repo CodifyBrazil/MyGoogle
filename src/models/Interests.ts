@@ -1,11 +1,11 @@
 import {model,Model, Schema, connection} from 'mongoose'; 
 
 type InterestsType = {
-    name: [string]
+    name: string
 }
 
 const schema = new Schema<InterestsType>({
-    name: [String]
+    name: String
 })
 
 const modelName: string = 'Interests';

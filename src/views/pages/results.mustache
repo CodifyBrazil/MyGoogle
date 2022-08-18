@@ -2,20 +2,20 @@
 
         <section>
         <aside>
-        <form method="GET" action="/q">
-            <div class="aside-top">
-                <div class="aside-search">
-                    <i class="fi fi-br-search"></i>
-                    <input type="text" value="{{search}}" name="query" placeholder="Digite sua busca ...">
-                    <input type="hidden" id="date" name="date_search" value=""/>
-                    <input type="hidden" id="per_page" name="p" value="1"/>
-                </div>
-                <div class="aside-new-data">
-                    <button class="btn btn-success btn-sm">Novo Dado</button>
-                    <button class="btn btn-primary btn-sm btn-right">Novo Filtro</button>
-                </div>
-            </div>  
-        <form>
+            <form method="GET" action="/q">
+                <div class="aside-top">
+                    <div class="aside-search">
+                        <i class="fi fi-br-search"></i>
+                        <input type="text" value="{{search}}" name="query" placeholder="Digite sua busca ...">
+                        <input type="hidden" id="date" name="date_search" value=""/>
+                        <input type="hidden" id="per_page" name="p" value="1"/>
+                    </div>
+                    <div class="aside-new-data">
+                        <button class="btn btn-success btn-sm">Novo Dado</button>
+                        <button class="btn btn-primary btn-sm btn-right">Novo Filtro</button>
+                    </div>
+                </div>  
+            <form>
 
             <div class="filters">
             {{#interests}}

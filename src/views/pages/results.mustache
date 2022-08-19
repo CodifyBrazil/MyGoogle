@@ -11,7 +11,7 @@
                         <input type="hidden" id="per_page" name="p" value="1"/>
                     </div>
                     <div class="aside-new-data">
-                        <button class="btn btn-success btn-sm">Novo Dado</button>
+                        <button class="btn btn-success btn-sm newdata">Novo Dado</button>
                         <button class="btn btn-primary btn-sm btn-right">Novo Filtro</button>
                     </div>
                 </div>  
@@ -27,7 +27,7 @@
             {{#query_search}}
                 <div class="article">
                     <div class="article-title">
-                        <a href="#">{{title}}</a>
+                        <a href="page/{{_id}}">{{title}}</a>
                     </div>
                     <div class="article-description">
                         <p>{{description}}</p>
@@ -49,6 +49,13 @@
     document.querySelector('.logo').addEventListener('click', ()=>{
         window.location.href = 'http://localhost:3000/';
     });
+
+    document.querySelector('.newdata').addEventListener('click', () =>{
+        window.open("http://localhost:3000/newdata");
+    });
+
+    document.addEventListener('keypress')
+    
 
     document.querySelector('#date').value = new Date();
 </script>

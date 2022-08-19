@@ -10,3 +10,4 @@ button_query.addEventListener('keypress', (e) =>{
 document.querySelector('.logo').addEventListener('click', ()=>{
     window.location.href = 'http://localhost:3000/';
 })
+

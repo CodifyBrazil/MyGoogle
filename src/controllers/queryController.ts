@@ -9,7 +9,6 @@ export const query = async (req: Request, res: Response) =>{
 
 
     let search = req.query.query;
-    let date_search = req.query.date_search;
 
     let page = parseInt(req.query.p as string);
     let limit: number = 10;
@@ -23,9 +22,15 @@ export const query = async (req: Request, res: Response) =>{
     
 
     let query_search = await Query.find({
-        title: {$regex: '.*' + search + '.*'},
-        description: {$regex: '.*' + search + '.*'},
-    }).skip(per_page).limit(limit);
+        $or: [
+            {title: {$regex: '.*' + search + '.*'}},
+            {slug: {$regex: '.*' + search + '.*'}}
+        ]}).skip(per_page).limit(limit);
+
+    await Query.find().or([{
+        title: {$regex: '.*' + search + '.*'}},
+        {slug: {$regex: '.*' + search + '.*'}}]);
+
 
     let historic = await Historic.create({
         query: search,

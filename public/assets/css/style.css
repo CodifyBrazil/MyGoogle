@@ -270,3 +270,39 @@ section .section-buttons-pages button:hover{
     position: relative;
     margin-left: 1200px;
 }
+
+/*PAGINA PARA CRIAR NOVOS CONTEUDOS */
+
+.create-data-ckeditor{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2.5%;
+    border: none;
+    border-radius: 8px;
+}
+
+.create-data-ckeditor-title{
+    width: 95%;
+    border: 1px solid #fafafa;
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.create-data-ckeditor-title span{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.create-data-ckeditor-title button{
+    margin-top: 20px;
+    width: 10%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}  

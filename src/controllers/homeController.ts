@@ -11,6 +11,6 @@ export const home = async (req: Request, res: Response) =>{
     res.render('pages/home',{
         home,
         interests,
-        query
+        query,
     });
 }

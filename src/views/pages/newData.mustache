@@ -1,0 +1,45 @@
+{{>partials/header}}
+
+    <section>
+        <form method="POST">
+            <div class="create-data-ckeditor">
+                <div class="create-data-ckeditor-title">
+                    <span>Titulo da pagina</span>
+                    <input type="text" name="title_conteudo" class="form-control" placeholder="Escreva o titulo da pagina">
+                </div>
+
+                <div class="create-data-ckeditor-title">
+                    <span>Corpo do conteudo</span>
+                    <textarea id="editor" name="body_conteudo">
+
+                    </textarea>
+                    <button class="btn btn-success btn-sm">Salvar <i class="fi fi-br-angle-small-right
+"></i></button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+<script src="assets/ckeditor/ckeditor.js"></script>
+<script>
+
+    ClassicEditor
+    .create( document.querySelector( '#editor' ), {
+        cloudServices: {
+            tokenUrl: 'https://91624.cke-cs.com/token/dev/df2c1eb89b4b1861319e941980674ea0591fde5a06ca735bf40d9606833c?limit=10',
+            uploadUrl: 'http://localhost:3000/upload/'
+        }
+    } )
+    .then( editor => {
+			window.editor = editor;
+
+		} )
+   .catch( err => {
+			console.error( err.stack );
+		} );
+
+
+
+</script>
+
+{{>partials/footer}}

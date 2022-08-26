@@ -210,7 +210,9 @@ section article .article{
     border-radius: 8px;
     background-color: #fcfcfc;
     padding: 10px;
-
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
 }
 
 section article .article .article-title{
@@ -299,10 +301,41 @@ section .section-buttons-pages button:hover{
     margin-bottom: 10px;
 }
 
-.create-data-ckeditor-title button{
+.create-data-ckeditor-title .salve{
     margin-top: 20px;
     width: 10%;
     align-items: center;
     display: flex;
     justify-content: center;
 }  
+
+
+/* PAGE VIEW*/
+
+.authors{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.authors span{
+    color: #aaaaaa;
+    margin-right: 10px;
+}
+.authors img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.title_page{
+    width: 100%;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.view{
+    margin-top: 30px;
+}

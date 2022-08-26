@@ -21,6 +21,7 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "froala-editor": "^4.0.13",
     "mongoose": "^6.5.2",
     "mustache-express": "^1.3.2",
     "sequelize": "^6.21.3"

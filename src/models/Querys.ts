@@ -4,6 +4,7 @@ type QuerysType = {
     slug: string,
     title: string,
     description: string,
+    body: string,
     filters: {}
 }
 
@@ -11,6 +12,7 @@ const schema = new Schema<QuerysType>({
     slug: String,
     title: String,
     description: String,
+    body: String,
     filters: {}
 })
 

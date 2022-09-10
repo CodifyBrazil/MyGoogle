@@ -7,7 +7,6 @@ import Interests from '../models/Interests';
 export const query = async (req: Request, res: Response) =>{
     let date_now = new Date();
 
-
     let search = req.query.query;
 
     let page = parseInt(req.query.p as string);
@@ -20,19 +19,15 @@ export const query = async (req: Request, res: Response) =>{
         var per_page: number = page * 10;
     }
     
-
+    // query content for page/results
     let query_search = await Query.find({
         $or: [
             {title: {$regex: '.*' + search + '.*'}},
             {slug: {$regex: '.*' + search + '.*'}}
         ]}).skip(per_page).limit(limit);
 
-    await Query.find().or([{
-        title: {$regex: '.*' + search + '.*'}},
-        {slug: {$regex: '.*' + search + '.*'}}]);
-
-
-    let historic = await Historic.create({
+    // salve historic query_search
+    await Historic.create({
         query: search,
         date_search: new Date() 
     })

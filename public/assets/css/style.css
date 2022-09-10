@@ -152,6 +152,11 @@ section aside .aside-top .btn-right{
     margin-right: 10px;
 }
 
+section aside .aside-top .aside-new-data a{
+    color: #fff;
+    text-decoration: none;
+}
+
 section aside .aside-search{
     width: 60%;
     height: 45px;
